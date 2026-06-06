@@ -40,10 +40,6 @@ Base URL: `/api/v1/player`
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | `/get` | Get all players |
-| POST | `/add` | Create player |
-| PUT | `/update/{id}` | Update player |
-| DELETE | `/delete/{id}` | Delete player |
 | GET | `/my-invitations/{playerId}` | Get player invitations |
 | GET | `/my-sessions/{playerId}` | Get player sessions |
 | GET | `/analysis/{playerId}` | AI player performance analysis |
@@ -55,10 +51,6 @@ Base URL: `/api/v1/game-session`
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | `/get` | Get all game sessions |
-| POST | `/add/{caseId}/{playerId}` | Create session from published case |
-| PUT | `/update/{id}` | Update pending session |
-| DELETE | `/delete/{id}` | Delete pending session |
 | GET | `/public` | Get public pending sessions |
 | POST | `/join/public/{gameSessionId}/{playerId}` | Join public session |
 | POST | `/join/private/{sessionCode}/{playerId}` | Join private session by code |
@@ -74,9 +66,6 @@ Base URL: `/api/v1/invitation`
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | `/get` | Get all invitations |
-| POST | `/add/{ownerId}/{gameSessionId}/{playerId}` | Invite player to private session |
-| DELETE | `/delete/{id}` | Delete invitation |
 | PUT | `/reject-invitation/{gameSessionId}/{playerId}` | Reject invitation |
 
 #### Session Player
@@ -85,8 +74,6 @@ Base URL: `/api/v1/session-player`
 
 | Method | Endpoint | Description |
 | --- | --- | --- |
-| GET | `/get` | Get all session players |
-| DELETE | `/delete/{sessionPlayerId}` | Delete session player |
 | GET | `/session-members/{gameSessionId}` | Get session members |
 | GET | `/player-history/{playerId}` | Get player session history |
 
